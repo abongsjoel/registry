@@ -19,6 +19,9 @@ const router = createBrowserRouter([
       {
         path: "/search",
         element: <SearchPage />,
+        loader: () => {
+          return ["react", "react-redux", "redux"];
+        },
       },
       {
         path: "/packages/:name",
