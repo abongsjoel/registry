@@ -3,7 +3,7 @@ import Header from "../components/Header";
 
 export default function Root() {
   return (
-    <div>
+    <div className="container mx-auto px-10">
       <Header />
       <Outlet />
     </div>
