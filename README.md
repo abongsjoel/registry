@@ -1,3 +1,88 @@
+# Registry Application
+
+This application provides a fast and responsive user experience. It includes features for adding, editing, and deleting registry entries, as well as searching and filtering through the data. The application is designed to be easily extendable and customizable to fit different use cases and requirements.
+
+## Built With
+
+- Vite
+- React
+- TypeScript
+- Tailwindcss
+
+## Running the Application
+
+To run the application locally, follow these steps:
+
+1. **Install dependencies**: Ensure you have Node.js installed, then run:
+
+```sh
+npm install
+```
+
+2. **Start the development server**: Use the following command to start the Vite development server:
+
+```sh
+npm run dev
+```
+
+3. **Build for production**: To create a production build, run:
+
+```sh
+npm run build
+```
+
+4. **Preview the production build**: After building, you can preview the production build locally with:
+
+```sh
+npm run preview
+```
+
+## Testing
+
+To run tests, use the following command:
+
+```sh
+npm test
+```
+
+## Linting
+
+To lint the codebase, use:
+
+```sh
+npm run lint
+```
+
+## Formatting
+
+To format the codebase, use:
+
+```sh
+npm run format
+```
+
+## Author
+
+👤 **Chi A. Joel**
+
+- GitHub: [@abongsjoel](https://github.com/abongsjoel)
+- Twitter: [@thierryjoel10](https://twitter.com/ThierryJoel10)
+- LinkedIn: [Chi Abongwa Joel](https://www.linkedin.com/in/joel-chi-b4285a97/)
+
+## Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/abongsjoel/registry/issues).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -18,11 +103,11 @@ export default tseslint.config({
   languageOptions: {
     // other options...
     parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
+      project: ["./tsconfig.node.json", "./tsconfig.app.json"],
       tsconfigRootDir: import.meta.dirname,
     },
   },
-})
+});
 ```
 
 - Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
@@ -31,11 +116,11 @@ export default tseslint.config({
 
 ```js
 // eslint.config.js
-import react from 'eslint-plugin-react'
+import react from "eslint-plugin-react";
 
 export default tseslint.config({
   // Set the react version
-  settings: { react: { version: '18.3' } },
+  settings: { react: { version: "18.3" } },
   plugins: {
     // Add the react plugin
     react,
@@ -44,8 +129,9 @@ export default tseslint.config({
     // other rules...
     // Enable its recommended rules
     ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
+    ...react.configs["jsx-runtime"].rules,
   },
-})
+});
 ```
+
 # registry
