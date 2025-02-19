@@ -6,7 +6,12 @@ export default function SearchPage() {
   const { searchResults } = useLoaderData() as SearchLoaderResult;
 
   const renderedResults = searchResults.map((result) => {
-    return <PackageListItem pack={result} key={result.name} />;
+    return (
+      <PackageListItem
+        pack={{ ...result, keywords: Array.from(new Set(result.keywords)) }}
+        key={result.name}
+      />
+    );
   });
 
   return (
